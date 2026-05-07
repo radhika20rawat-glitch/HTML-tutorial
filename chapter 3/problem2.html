@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travelstud.com - Book your travel to Bali</title>
+    <style>/* Global styling */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right, #00b4db, #0083b0);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Form container */
+form {
+    background: white;
+    width: 350px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* Input fields */
+form div {
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 15px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* Input focus effect */
+input:focus, textarea:focus {
+    border-color: #0083b0;
+    box-shadow: 0 0 5px rgba(0, 131, 176, 0.6);
+}
+
+/* Textarea height */
+textarea {
+    height: 80px;
+}
+
+/* Submit button */
+button {
+    width: 100%;
+    padding: 12px;
+    background: #0083b0;
+    border: none;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Hover effect */
+button:hover {
+    background: #00b4db;
+}
+</style>
+</head>
+<body>
+    <h1>BOOKING TRAVEL FORM</h1>
+    <form action="">
+        <div>
+            <label for="name">Name</label>
+            <input id="name" type="text" placeholder="Enter your name ">
+        </div>
+        <div>
+            <label for="age">Age</label>
+            <input id="age" type="number" placeholder="Enter your age">        </div>
+         <div>
+            <label for="phone">Phone</label>
+            <input id="phone" type="number" placeholder="Enter your phone"> 
+         </div> 
+         <div>
+            <label for="email">Email</label>
+            <input id="email" type="text" placeholder="Enter your email"> 
+         </div> 
+         <div>
+            <label for="address">Address</label>
+            <textarea name="address" id="address"> </textarea>
+         </div> 
+         <button type="sumit">Submit</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms </title>
+    <style>/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Body styling */
+body {
+    background: #8fac5d;
+    padding: 30px;
+}
+
+/* Form container */
+form {
+    width: 400px;
+    background: #fff;
+    padding: 25px;
+    margin: auto;
+    border-radius: 12px;
+    box-shadow: 0px 0px 12px rgba(0,0,0,0.1);
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 26px;
+}
+
+/* Form inputs container */
+form div {
+    margin-bottom: 15px;
+}
+
+/* All labels */
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Text, email, date, password, select, textarea styling */
+input[type="text"],
+input[type="phone"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+/* Radio and checkbox alignment */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+/* Submit button */
+button {
+    width: 100%;
+    padding: 12px;
+    background: #007bff;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    form {
+        width: 90%;
+    }
+}
+</style>
+</head>
+<body>
+    <h1>Forms in HTML</h1>
+    <form action="/submit.php">
+        <!--Name input-->
+        <div>
+            <label for="name">Name</label>
+            <input id="name"  type="text" placeholder="Enter Name">
+        </div>
+        <!--phone input-->
+        <div>
+            <label for="Phone">Phone</label>
+            <input id="phone" type="phone" placeholder="Enter Phone">
+        </div>
+        <!--email input-->
+        <div>
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="Enter Email">
+        </div>
+        <!--password input-->
+        <div>
+            <label for="password">Password</label>
+            <input id="password" type="password" placeholder="Enter Password" required>
+        </div>
+        <!--date input-->
+        <div>
+            <label for="dob">Date of Birth </label>
+            <input id="dob" type="date"  required>
+        </div>
+        <!--Dropdown (select input) for Gender-->
+        <div>
+            <label for="gender">Gender</label>
+            <select id="gender" required>
+                <option value="" disabled selected>Select Gender</option>
+                <option value="male">Male</option>
+                <option value="Female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+            <!--Radio buttons for Subscription plan-->
+            <div>
+                <p>Subscription Plan</p>
+                <input id="basic" type="radio" name="subscription"
+                value="basic">
+                <label for="basic">Basic</label>
+
+                <input id="Premium" type="radio" name="subscription" value="premium">
+                <label for="vip">Premium</label>
+            </div>
+            <!--Checkbox for agreeing to terms-->
+            <div>
+                <input id="terms" type="checkbox" required>
+                <label for="terms">I agree to the terms and conditions</label>
+            </div>
+            <!--Textarea  for Comments-->
+            <div>
+                <label for="comments">Comment</label>
+                <textarea id="comments" placeholder="Enter your comments" rows="4"></textarea>
+            </div>
+            <!--Submit button-->
+            <div>
+                <button type="Submit">Submit</button>
+            </div>
+
+        
+    </form>
+</body>
+</html>
